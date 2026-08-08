@@ -1,0 +1,262 @@
+\documentclass[a4paper]{amsart}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage[hidelinks]{hyperref}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\title[Counterexamples to a Brannan coefficient inequality]
+  {Counterexamples to an all-positive Brannan coefficient inequality}
+\date{}
+
+\begin{document}
+
+\begin{abstract}
+For positive parameters \(\alpha,\beta\), let \(A_n(x;\alpha,\beta)\) be defined by
+\((1+xz)^\alpha(1-z)^{-\beta}=\sum_{n\geq0}A_n(x;\alpha,\beta)z^n\).
+We give an exact counterexample to the assertion, recorded in Hayman--Lingham Problem~5.44, that
+\(\lvert A_j(x;\alpha,\beta)\rvert\leq A_j(1;\alpha,\beta)\) for every odd \(j\geq3\), every \(\lvert x\rvert=1\), and all \(\alpha,\beta>0\).
+At \((\alpha,\beta,j,x)=(3/2,1/14,3,-1)\), the two sides are \(20/343\) and \(33/686\), with reverse gap \(1/98\).
+We also classify the endpoint inequality completely when \(j=3\) and construct positive-right-hand-side counterexamples at every integer index \(j\geq3\).
+\end{abstract}
+
+\maketitle
+
+\section{The recorded problem and its scope}
+
+For \(\alpha,\beta>0\), define the coefficient polynomials by the analytic binomial series at the origin,
+\begin{equation}\label{eq:def}
+ (1+xz)^\alpha(1-z)^{-\beta}
+ =\sum_{n\geq0}A_n(x;\alpha,\beta)z^n.
+\end{equation}
+Hayman and Lingham record the following all-positive generalization in Problem~5.44 of
+\cite{HaymanLingham}: does
+\begin{equation}\label{eq:question}
+ \lvert A_j(x;\alpha,\beta)\rvert\leq A_j(1;\alpha,\beta)
+\end{equation}
+hold for every \(\alpha,\beta>0\), every odd \(j\geq3\), and every \(\lvert x\rvert=1\)?
+Their text emphasizes that even the generalized \(j=3\) case was unknown.  This formulation is broader than the standard modern Brannan coefficient conjecture, which restricts the parameters to the unit square; see, for example, \cite{RuscheweyhSalinas,CotirlaSzasz,DunsterI,DunsterII}.  The latter parameter range is not challenged here.
+
+Our first result answers the literal all-positive question negatively.
+
+\begin{theorem}[Exact counterexample]\label{thm:counterexample}
+The universal assertion \eqref{eq:question} is false.  More precisely,
+\[
+ (\alpha,\beta,j,x)=\left(\frac32,\frac1{14},3,-1\right)
+\]
+satisfies all its hypotheses, whereas
+\[
+ A_3\left(1;\frac32,\frac1{14}\right)=\frac{33}{686}>0,
+ \qquad
+ \left\lvert A_3\left(-1;\frac32,\frac1{14}\right)\right\rvert
+ =\frac{20}{343}=\frac{40}{686}.
+\]
+The reverse gap is exactly \(1/98\).
+\end{theorem}
+
+The witness has \(\alpha=3/2>1\).  It therefore lies outside the unit square on which the classical conjecture is known, while remaining inside the unrestricted positive quadrant of the recorded question.
+
+\section{Degree three}
+
+Finite coefficient extraction from \eqref{eq:def} gives
+\begin{equation}\label{eq:a3coeffs}
+ A_3(x)=
+ \frac{\beta(\beta+1)(\beta+2)}6
+ +\frac{\alpha\beta(\beta+1)}2x
+ +\frac{\alpha(\alpha-1)\beta}2x^2
+ +\frac{\alpha(\alpha-1)(\alpha-2)}6x^3.
+\end{equation}
+We suppress the parameters when no ambiguity can arise.
+
+\begin{lemma}\label{lem:sdforms}
+Put \(s=\alpha+\beta\) and \(d=\alpha-\beta\).  Then
+\[
+ A_3(1;\alpha,\beta)=\frac{s(s^2-3d+2)}6,
+ \qquad
+ A_3(-1;\alpha,\beta)=-\frac{d(d-1)(d-2)}6.
+\]
+\end{lemma}
+
+\begin{proof}
+The first identity follows by summing \eqref{eq:a3coeffs} and collecting in \(s,d\).
+For the second, setting \(x=-1\) in \eqref{eq:def} yields the identity of normalized analytic germs
+\[
+ (1-z)^\alpha(1-z)^{-\beta}=(1-z)^d.
+\]
+The coefficient of \(z^3\) is therefore \(-\binom d3\).
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:counterexample}]
+At the stated parameters, \(s=11/7\) and \(d=10/7\).  Lemma~\ref{lem:sdforms} gives
+\[
+ A_3(1)=\frac{11}{42}\left(\frac{121}{49}-\frac{30}{7}+2\right)
+ =\frac{33}{686},
+ \qquad
+ A_3(-1)=-\frac{(10/7)(3/7)(-4/7)}6=\frac{20}{343}.
+\]
+Consequently
+\(
+ \lvert A_3(-1)\rvert-A_3(1)=(40-33)/686=1/98>0
+\), as claimed.
+\end{proof}
+
+The endpoint phenomenon admits a complete two-parameter classification.
+
+\begin{theorem}[Endpoint classification]\label{thm:endpoint}
+For every \(\alpha,\beta>0\),
+\[
+ \lvert A_3(-1;\alpha,\beta)\rvert\leq A_3(1;\alpha,\beta)
+\]
+if and only if
+\begin{equation}\label{eq:F}
+ F(\alpha,\beta):=3\beta(\beta+1)+(\alpha-1)(\alpha-2)\geq0.
+\end{equation}
+Thus strict endpoint failure occurs exactly when
+\[
+ 1<\alpha<2,
+ \qquad
+ 3\beta(\beta+1)<(\alpha-1)(2-\alpha).
+\]
+Equality occurs exactly on \(F=0\), and throughout the strict failure region
+\begin{equation}\label{eq:gap}
+ \lvert A_3(-1)\rvert-A_3(1)=-\frac{\alpha}{3}F(\alpha,\beta).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Write \(A_3(x)=c_0+c_1x+c_2x^2+c_3x^3\), with the coefficients from
+\eqref{eq:a3coeffs}, and set \(E=c_0+c_2\), \(O=c_1+c_3\).  Direct factorization gives
+\[
+ E=\frac{\beta}{6}
+ \bigl(3\alpha^2-3\alpha+\beta^2+3\beta+2\bigr),
+ \qquad
+ O=\frac{\alpha}{6}F(\alpha,\beta).
+\]
+The first bracket equals
+\[
+ 3\left(\alpha-\frac12\right)^2+\frac54+\beta^2+3\beta,
+\]
+so \(E>0\).  Since \(A_3(1)=E+O\) and \(A_3(-1)=E-O\), one has
+\[
+ \lvert E-O\rvert\leq E+O \quad\Longleftrightarrow\quad O\geq0.
+\]
+Indeed, the implication to the right is immediate when \(O<0\), because then
+\(\lvert E-O\rvert-(E+O)=-2O>0\); the converse is the triangle inequality for
+the two nonnegative numbers \(E,O\).  This proves the equivalence and shows that equality is exactly \(O=0\).  When \(O<0\), the same calculation gives
+\(\lvert A_3(-1)\rvert-A_3(1)=-2O=-\alpha F/3\).
+Finally, \(F<0\) is possible precisely for \(1<\alpha<2\), where it is equivalent to the displayed strict inequality.
+\end{proof}
+
+For completeness, the portion of the endpoint failure region having a positive right-hand side can also be written exactly.  When \(1<\alpha<2\), define
+\[
+ b_R(\alpha)=\frac{\sqrt{24\alpha+1}-(2\alpha+3)}2,
+ \qquad
+ b_F(\alpha)=\frac{\sqrt{1+\frac43(\alpha-1)(2-\alpha)}-1}{2}.
+\]
+Then \(0<b_R(\alpha)<b_F(\alpha)\), and
+\[
+ A_3(1)>0\quad\text{and}\quad \lvert A_3(-1)\rvert>A_3(1)
+ \quad\Longleftrightarrow\quad
+ b_R(\alpha)<\beta<b_F(\alpha).
+\]
+This follows by viewing the bracket in
+\[
+ A_3(1)=\frac{\alpha+\beta}{6}
+ \bigl(\beta^2+(2\alpha+3)\beta-(\alpha-1)(2-\alpha)\bigr)
+\]
+as a strictly increasing function of \(\beta>0\), and observing that on the wall \(F=0\) one has \(A_3(1)=E>0\).
+
+\section{Positive-right-hand-side failures at every index}
+
+The counterexample is not an isolated degree-three accident.
+
+\begin{theorem}\label{thm:everyindex}
+For every integer \(j\geq3\), there exist rational \(\alpha,\beta>0\) such that
+\[
+ A_j(1;\alpha,\beta)>0
+ \qquad\text{and}\qquad
+ \lvert A_j(-1;\alpha,\beta)\rvert>A_j(1;\alpha,\beta).
+\]
+In particular, every odd index allowed by Problem~5.44 admits an open set of counterexamples.
+\end{theorem}
+
+\begin{proof}
+Put
+\[
+ m=j-2,
+ \qquad C=m2^{m+1}+1,
+ \qquad c=\frac{3}{2C},
+\]
+and, for \(\varepsilon>0\), set \(\alpha=m+\varepsilon\) and
+\(\beta=c\varepsilon\).  Let
+\(R_j(\varepsilon)=A_j(1;m+\varepsilon,c\varepsilon)\).
+The coefficient extraction is finite, so \(R_j\) is a polynomial in \(\varepsilon\), with \(R_j(0)=0\).
+
+Using
+\[
+ A_j(1;\alpha,\beta)=
+ \sum_{k=0}^{j}\binom{\alpha}{k}
+ \frac{(\beta)_{j-k}}{(j-k)!},
+\]
+where \((\beta)_r\) is the rising factorial, differentiation at \(\varepsilon=0\) gives
+\begin{equation}\label{eq:Rderivative}
+ R_j'(0)=-\frac1{j(j-1)}
+ +c\sum_{k=0}^{m}\frac{\binom mk}{j-k}.
+\end{equation}
+Here the first term is the derivative at \(m\) of \(\binom{\alpha}{m+2}\), while
+\((c\varepsilon)_r/r!=c\varepsilon/r+O(\varepsilon^2)\) for \(r\geq1\).
+After substituting \(r=m-k\),
+\[
+ \sum_{k=0}^{m}\frac{\binom mk}{m+2-k}
+ =\sum_{r=0}^{m}\frac{\binom mr}{r+2}
+ =\int_0^1x(1+x)^m\,dx
+ =\frac{m2^{m+1}+1}{(m+1)(m+2)}
+ =\frac{C}{j(j-1)}.
+\]
+Thus \eqref{eq:Rderivative} becomes
+\[
+ R_j'(0)=\frac{cC-1}{j(j-1)}=\frac1{2j(j-1)}>0,
+\]
+and hence
+\begin{equation}\label{eq:Rexpansion}
+ A_j(1)=\frac{\varepsilon}{2j(j-1)}+O(\varepsilon^2).
+\end{equation}
+
+At \(x=-1\), the analytic-germ identity gives
+\[
+ A_j(-1)=(-1)^j\binom{m+(1-c)\varepsilon}{j}.
+\]
+For sufficiently small positive \(\varepsilon\), the upper argument lies strictly between \(m\) and \(m+1\); consequently this binomial coefficient has exactly one negative factor.  Therefore
+\begin{equation}\label{eq:endexpansion}
+ \lvert A_j(-1)\rvert
+ =-\binom{m+(1-c)\varepsilon}{j}
+ =\frac{1-c}{j(j-1)}\varepsilon+O(\varepsilon^2).
+\end{equation}
+Subtracting \eqref{eq:Rexpansion} from \eqref{eq:endexpansion} yields
+\[
+ \lvert A_j(-1)\rvert-A_j(1)
+ =\frac{C-3}{2Cj(j-1)}\varepsilon+O(\varepsilon^2)>0
+\]
+for all sufficiently small \(\varepsilon>0\), because \(C\geq5\).  At the same time \eqref{eq:Rexpansion} makes \(A_j(1)>0\).
+Choosing a sufficiently small rational \(\varepsilon\) gives rational \(\alpha,\beta\).  Strictness and continuity then give an open neighborhood of counterexamples.
+\end{proof}
+
+\section{Context and limitations}
+
+The proof of Theorem~\ref{thm:counterexample} is elementary and symbolic; no bounded computation is load-bearing.  Exact arithmetic software may independently replay the displayed witness, but such a replay is corroboration rather than a substitute for the proof.
+
+A documented search through August 6, 2026 found no earlier publicly retrievable counterexample identical to or stronger than Theorem~\ref{thm:counterexample}, nor the endpoint classification or every-index construction above.  The results therefore appear new with moderate confidence.  Absolute historical priority is not claimed: complete older theses and dissertations of U.~C.~Jayatilake, related seminar materials, restricted older chapters and reports, and private or non-digitized sources could not all be retrieved.  The coefficient identities, endpoint decomposition, and perturbative analysis use known tools; the apparent novelty lies in the negative result and the exact classifications, not in a new general algebraic method.
+
+Finally, the conclusion should not be misread as a counterexample to the standard unit-square Brannan conjecture.  The witness has \(\alpha>1\), and the present result answers only the broader all-positive question recorded by Hayman and Lingham.
+
+\bibliographystyle{amsplain}
+\bibliography{references}
+
+\end{document}

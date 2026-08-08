@@ -1,0 +1,18 @@
+{
+  "status": "DRAFT_NOT_APPROVED",
+  "title": "Counterexamples to an all-positive Brannan coefficient inequality",
+  "upload_type": "publication",
+  "publication_type": "article",
+  "version": "1.0.0",
+  "description": "An exact negative answer to the all-positive generalized coefficient question recorded as Hayman--Lingham Problem 5.44, together with a degree-three endpoint classification and rational counterexamples at every integer index at least three.",
+  "creators": [],
+  "license": null,
+  "keywords": [
+    "Brannan coefficient conjecture",
+    "coefficient inequalities",
+    "analytic functions",
+    "counterexample"
+  ],
+  "related_identifiers": [],
+  "notes": "Creators, license, repository URL, related identifiers, and release date require explicit human approval before deposition."
+}

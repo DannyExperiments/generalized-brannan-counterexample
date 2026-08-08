@@ -1,0 +1,38 @@
+name: PDF build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      SOURCE_DATE_EPOCH: "1786147200"
+      FORCE_SOURCE_DATE: "1"
+      TZ: UTC
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Remove the committed PDF before rebuilding
+        run: rm -f paper/manuscript.pdf
+      - name: Compile TeX and bibliography
+        uses: xu-cheng/latex-action@6549dc21effb2730855a1281407ecfcececc6c1b
+        with:
+          root_file: manuscript.tex
+          working_directory: paper
+          texlive_version: 2026
+          args: -pdf -interaction=nonstopmode -halt-on-error -file-line-error
+      - name: Upload the freshly built PDF
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: generalized-brannan-counterexample-paper
+          path: paper/manuscript.pdf
+          if-no-files-found: error

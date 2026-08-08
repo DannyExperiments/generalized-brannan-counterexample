@@ -1,0 +1,47 @@
+AMR-022-5044 PDF preflight
+
+PDF_PREFLIGHT_STATUS: PASS
+PDF_SHA256: 1097cc84f2893e29a6b48535465fec4a1c68fb42422af3cc0e310f7172cebb24
+PDF_PAGE_COUNT: 4
+PDF_PAGE_SIZE: A4 (595.276 x 841.89 points)
+PDF_ENCRYPTED: NO
+PDF_OPENABLE: YES
+PDF_LIKELY_SCANNED: NO
+PDF_SEARCHABLE_TEXT: PASS
+PDF_FONTS_EMBEDDED: PASS
+PDF_GHOSTSCRIPT_PARSE: PASS
+
+LaTeX and bibliography checks
+-----------------------------
+- undefined citations: 0
+- undefined references: 0
+- multiply defined labels: 0
+- overfull hboxes/vboxes: 0
+- underfull hboxes/vboxes: 0
+- LaTeX errors: 0
+- bibliography errors: 0
+- bibliography warnings: 0
+
+Rendering and visual inspection
+-------------------------------
+Renderer: repository PDF rendered to PNG at 200 DPI.
+Rendered pages: 4 of 4.
+
+Page 1: PASS. Title, abstract, problem statement, exact witness, equations,
+         theorem text, and beginning of the degree-three proof are fully
+         visible. No clipping, overlap, broken glyphs, malformed equations,
+         or margin intrusion.
+Page 2: PASS. Endpoint theorem, factorization proof, positive-right-hand-side
+         subregion, and every-index theorem statement are clean and legible.
+         No clipping, overlap, broken glyphs, or poor equation breaks.
+Page 3: PASS. Every-index construction, asymptotic formulas, proof ending,
+         scope statement, and qualified priority paragraph are clean and
+         legible. No clipping, overlap, broken glyphs, or malformed equations.
+Page 4: PASS. Reference list is complete for all cited entries, legible, and
+         unclipped. The remaining white space is ordinary end-of-document
+         pagination, not missing content.
+
+Display fragmentation: acceptable; no excessive fragmentation observed.
+Private-data/path/chat-URL scan: PASS for the repository candidate and
+extracted PDF text. No private ChatGPT URL, sandbox URI, user-home path,
+temporary build path, file identifier, credential, or account datum was found.
