@@ -5,6 +5,8 @@ type: software
 version: 1.0.0
 date-released: 2026-08-08
 repository-code: "https://github.com/DannyExperiments/generalized-brannan-counterexample"
+doi: "10.5281/zenodo.21853316"
+url: "https://doi.org/10.5281/zenodo.21853316"
 authors:
   - name: "DannyExperiments"
 preferred-citation:
@@ -14,6 +16,8 @@ preferred-citation:
     - name: "DannyExperiments"
   year: 2026
   version: 1.0.0
+  doi: "10.5281/zenodo.21853316"
+  url: "https://doi.org/10.5281/zenodo.21853316"
 keywords:
   - complex analysis
   - univalent functions

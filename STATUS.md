@@ -18,11 +18,11 @@
 - [x] Authorship, acknowledgments, AI disclosure, and license status approved.
 - [x] Human review of the clean repository surface completed.
 - [x] Public timestamp and Version 1.0.0 release approved.
-- [ ] DOI metadata reviewed and deposited; pending the release deposit.
+- [x] DOI metadata reviewed, deposited, and publicly resolved.
 
-Current release state: `PUBLIC_V1_RELEASE_APPROVED_DOI_PENDING`.
+Current release state: `PUBLIC_V1_RELEASE_DOI_DEPOSITED`.
 
 The local build, PDF preflight, checksum replay, exact arithmetic replay,
-repository verifier, and public-branch workflows are complete. The DOI gate
-will be marked complete after the immutable release deposit is published and
-its identifier resolves.
+repository verifier, and public-branch workflows are complete. The immutable
+Version 1.0.0 release deposit is published at
+`https://doi.org/10.5281/zenodo.21853316`.

@@ -4,6 +4,7 @@
 [![PDF build](https://github.com/DannyExperiments/generalized-brannan-counterexample/actions/workflows/pdf.yml/badge.svg)](https://github.com/DannyExperiments/generalized-brannan-counterexample/actions/workflows/pdf.yml)
 [![Partial exact-witness Lean check](https://github.com/DannyExperiments/generalized-brannan-counterexample/actions/workflows/lean.yml/badge.svg)](https://github.com/DannyExperiments/generalized-brannan-counterexample/actions/workflows/lean.yml)
 [![Release v1.0.0](https://img.shields.io/github/v/release/DannyExperiments/generalized-brannan-counterexample?label=release)](https://github.com/DannyExperiments/generalized-brannan-counterexample/releases/tag/v1.0.0)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21853316.svg)](https://doi.org/10.5281/zenodo.21853316)
 
 [Paper (PDF)](paper/manuscript.pdf) ·
 [TeX source](paper/manuscript.tex) ·
@@ -96,6 +97,8 @@ adversarial auditing, literature-search assistance, manuscript preparation,
 and repository assembly. No AI system is proposed as an author. See
 [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md) and [`PROVENANCE.md`](PROVENANCE.md).
 
-Version 1.0.0 is the frozen public release. The badges report checks on the
-public default branch. The release does not claim journal acceptance, human
-peer review, full analytic formalization, or absolute historical priority.
+Version 1.0.0 is the frozen public release and is archived at
+[`10.5281/zenodo.21853316`](https://doi.org/10.5281/zenodo.21853316). The
+badges report checks on the public default branch. The release does not claim
+journal acceptance, human peer review, full analytic formalization, or
+absolute historical priority.

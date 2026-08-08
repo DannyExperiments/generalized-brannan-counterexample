@@ -72,5 +72,5 @@
 PDF build, page-by-page visual preflight, local checksum replay, exact arithmetic
 replay, repository verifier, and all three public-branch workflows have passed.
 Authorship, license status, citation metadata, and publication visibility are
-approved. DOI deposition remains pending until the immutable Version 1.0.0
-release deposit is published and verified.
+approved. The immutable Version 1.0.0 deposit is published and verified at
+`https://doi.org/10.5281/zenodo.21853316`.

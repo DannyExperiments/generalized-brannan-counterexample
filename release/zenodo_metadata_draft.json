@@ -1,5 +1,7 @@
 {
-  "status": "APPROVED_FOR_DEPOSIT",
+  "status": "PUBLISHED",
+  "doi": "10.5281/zenodo.21853316",
+  "record_url": "https://zenodo.org/records/21853316",
   "title": "Counterexamples to an all-positive Brannan coefficient inequality",
   "upload_type": "publication",
   "publication_type": "article",
