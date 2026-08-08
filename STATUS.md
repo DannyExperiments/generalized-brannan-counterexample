@@ -14,14 +14,14 @@
   analytic and every-index results remain outside its stated scope.
 - [x] Public-safe evidence selected; private URLs and machine paths removed.
 - [x] Deterministic exact arithmetic replay passes locally.
-- [ ] GitHub Actions pass on the final remote candidate.
+- [x] GitHub Actions pass on the final private remote candidate.
 - [ ] Authorship, acknowledgments, AI disclosure, and license approved.
 - [ ] Human private review of the clean repository.
 - [ ] Public timestamp/release approved.
 - [ ] DOI metadata reviewed and deposited.
 
-Current release state: `PRIVATE_CANDIDATE_VERIFIED`.
+Current release state: `PRIVATE_REMOTE_CANDIDATE_PASS`.
 
-The local build, PDF preflight, checksum replay, exact arithmetic replay, and
-repository verifier are complete. No public release is authorized by this
-checklist alone.
+The local build, PDF preflight, checksum replay, exact arithmetic replay,
+repository verifier, and private-branch workflows are complete. No public
+release is authorized by this checklist alone.

@@ -13,6 +13,7 @@ Private conversation URLs, browser identifiers, account data, local machine
 paths, and raw model-instance receipts are retained outside the public
 surface.
 
-No finite computation is load-bearing for the theorem. No proof-assistant
-formalization is claimed unless a later kernel-checked artifact is added and
-scope-matched explicitly.
+No finite computation is load-bearing for the theorem. The pinned Lean project
+kernel-checks only the exact rational witness, its strict reverse inequality,
+and the gap `1/98`. It does not formalize analytic coefficient extraction, the
+endpoint classification, or the every-index construction.

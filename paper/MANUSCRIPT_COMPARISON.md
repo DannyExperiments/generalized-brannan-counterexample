@@ -45,3 +45,11 @@ No theorem in the manuscript exceeds the canonical Version 1.1 theorem set.
 Every included substantive theorem has a complete proof in the manuscript.
 The sole canonical substantive theorem omitted is optional and is not needed
 for the headline result.
+
+Three post-comparison TeX-only presentation controls were added: a three-em
+`emergencystretch` to make the clean CI build reproduce the audited line
+breaking, an empty `\author{}` declaration to leave the title block anonymous,
+and an explicit short running head to prevent `amsart` from substituting its
+long-title fallback where an author name would ordinarily appear. None changes
+any mathematical sentence, formula, theorem, proof, citation, or scope
+statement.

@@ -16,5 +16,5 @@ Build with:
 latexmk -pdf -interaction=nonstopmode -halt-on-error manuscript.tex
 ```
 
-No author entry is included. Authorship and release metadata remain human
-decisions before public release.
+No author name appears in the manuscript. Authorship and release metadata
+remain human decisions before public release.

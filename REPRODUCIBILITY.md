@@ -28,3 +28,11 @@ bibliography; a committed PDF is not accepted as build evidence by itself.
 the shortest proof, exact arithmetic replay, public audit summaries, and the
 pinned partial Lean project. It deliberately excludes private model receipts
 and third-party source PDFs.
+
+Rebuild it with:
+
+```text
+python3 scripts/build_evidence_bundle.py
+```
+
+Two builds from unchanged inputs produce byte-identical ZIP archives.

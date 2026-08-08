@@ -93,11 +93,12 @@ The final authorship and public AI-disclosure wording remain explicit human
 release decisions. AI systems were used for discovery, proof development,
 adversarial auditing, literature-search assistance, manuscript preparation,
 and repository assembly. No AI system is proposed as an author. See
-[`AI_ASSISTANCE.md`](AI_ASSISTANCE.md) and [`PROVENANCE.md`](PROVENANCE.md).
+[`AI_DISCLOSURE.md`](AI_DISCLOSURE.md) and [`PROVENANCE.md`](PROVENANCE.md).
 
 This repository is a private release candidate until the remaining gates in
-[`STATUS.md`](STATUS.md) are approved. The local evidence and PDF workflows are
-defined above; their badges become release evidence only after all three workflows
-pass on the eventual repository's default branch. It does not claim journal
+[`STATUS.md`](STATUS.md) are approved. The evidence, PDF, and partial Lean
+workflows are defined above and pass on the private repository's default branch.
+Their badges become public release evidence only after visibility is approved
+and the same checks pass on the public default branch. It does not claim journal
 acceptance, human peer review, full analytic formalization, or absolute
 historical priority.

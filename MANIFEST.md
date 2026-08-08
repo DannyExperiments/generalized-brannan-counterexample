@@ -41,7 +41,7 @@
 - `evidence/README.md`
 - `audits/MATHEMATICAL_AUDIT.md`
 - `audits/LITERATURE_PRIORITY_AUDIT.md`
-- `AI_ASSISTANCE.md`
+- `AI_DISCLOSURE.md`
 - `PROVENANCE.md`
 
 ## Formalization status
@@ -62,8 +62,14 @@
 - `release/zenodo_metadata_draft.json`
 - `release/EVIDENCE_BUNDLE.zip`
 
+## Repository tooling
+
+- `scripts/verify_repository.py`
+- `scripts/build_evidence_bundle.py`
+- `scripts/verify.sh`
+
 `SHA256SUMS.txt` covers every other regular file in this candidate. The clean
 PDF build, page-by-page visual preflight, local checksum replay, exact arithmetic
-replay, and repository verifier have passed. Remote workflow execution,
-authorship, license, citation metadata, release tag, publication visibility,
+replay, repository verifier, and all three private-branch workflows have passed.
+Authorship, license, citation metadata, release tag, publication visibility,
 and DOI deposition remain gated.

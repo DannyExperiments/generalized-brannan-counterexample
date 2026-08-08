@@ -49,7 +49,7 @@ def verify_required_files() -> None:
         "ORIGINAL_PROBLEM.md",
         "CLAIM_SCOPE_AND_LIMITATIONS.md",
         "PRIOR_ART_AND_LIMITATIONS.md",
-        "AI_ASSISTANCE.md",
+        "AI_DISCLOSURE.md",
         "PROVENANCE.md",
         "paper/manuscript.tex",
         "paper/references.bib",
@@ -58,6 +58,7 @@ def verify_required_files() -> None:
         "proof/PROBLEM_AND_PROOF.md",
         "audits/MATHEMATICAL_AUDIT.md",
         "audits/LITERATURE_PRIORITY_AUDIT.md",
+        "scripts/build_evidence_bundle.py",
     ]
     for relative in required:
         if not (ROOT / relative).is_file():
@@ -83,12 +84,19 @@ def verify_scope_markers() -> None:
 def verify_privacy() -> None:
     forbidden = [
         re.compile(r"chatgpt\.com/c/", re.I),
+        re.compile(r"chatgpt\.com/(share|s|t)/", re.I),
         re.compile("sandbox" + r":/", re.I),
         re.compile(r"/Users/[A-Za-z0-9._-]+/"),
         re.compile(r"\\Users\\[A-Za-z0-9._-]+\\"),
+        re.compile("/private" + r"/var/", re.I),
+        re.compile("codex" + r"/attachments", re.I),
+        re.compile("file" + r"_[0-9a-f]{12,}", re.I),
         re.compile("6a738" + "b62", re.I),
     ]
-    suffixes = {".md", ".tex", ".bib", ".py", ".yml", ".yaml", ".txt", ".json"}
+    suffixes = {
+        ".md", ".tex", ".bib", ".py", ".yml", ".yaml", ".txt",
+        ".json", ".cff", ".toml", ".sh",
+    }
     for path in ROOT.rglob("*"):
         relative = path.relative_to(ROOT)
         if ".git" in relative.parts or ".lake" in relative.parts:
