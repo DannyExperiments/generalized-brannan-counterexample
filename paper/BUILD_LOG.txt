@@ -13,19 +13,19 @@ Canonical source hashes
 
 Canonical output
 ----------------
-- paper/manuscript.pdf: 6149975f5a566db43bfd700f93661617c9b6e23effca81cbf58896bbc94b45c8
-- bytes: 359117
+- paper/manuscript.pdf: 52d7bd27faeef36e65efb33a064fc14caff83297ed6dcebbb94619faa9eecf1c
+- bytes: 358873
 - pages: 4
 - page size: A4 (595.276 x 841.89 points)
 
 Clean remote build
 ------------------
 - repository: DannyExperiments/generalized-brannan-counterexample (private)
-- source commit: 7cf74429a19e5fb0e7e78ac0423db5e5efd620bf
+- source commit: 1fe3521ce16d470d9faa59114f33191c78687a21
 - workflow: PDF build
-- run: 31248531292
-- job: 93081013867
-- artifact: 9019272662
+- run: 31249202182
+- job: 93082744127
+- artifact: 9019475034
 - result: PASS
 - toolchain: TeX Live 2026; pdfTeX 1.40.29; latexmk 4.88
 

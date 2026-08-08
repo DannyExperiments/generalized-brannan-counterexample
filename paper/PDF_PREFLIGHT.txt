@@ -1,8 +1,8 @@
 AMR-022-5044 canonical PDF preflight
 
 PDF_PREFLIGHT_STATUS: PASS
-PDF_SHA256: 6149975f5a566db43bfd700f93661617c9b6e23effca81cbf58896bbc94b45c8
-PDF_BYTES: 359117
+PDF_SHA256: 52d7bd27faeef36e65efb33a064fc14caff83297ed6dcebbb94619faa9eecf1c
+PDF_BYTES: 358873
 PDF_PAGE_COUNT: 4
 PDF_PAGE_SIZE: A4 (595.276 x 841.89 points)
 PDF_ENCRYPTED: NO
@@ -11,6 +11,9 @@ PDF_SEARCHABLE: YES
 PDF_FORMS: NONE
 PDF_JAVASCRIPT: NO
 PDF_AUTHOR_METADATA: EMPTY
+PDF_CREATION_DATE_METADATA: ABSENT
+PDF_MODIFICATION_DATE_METADATA: ABSENT
+PDF_TRAILER_ID: SUPPRESSED
 
 LaTeX and bibliography checks
 -----------------------------
@@ -38,6 +41,10 @@ Page 4: PASS. The references and page number are correctly placed. The white
 
 No clipping, overlap, broken glyphs, malformed equations, margin intrusion,
 placeholder author text, or excessive display fragmentation was observed.
+
+The rendered mathematical content and pagination are unchanged from the
+previously audited four-page candidate. The rebuilt file additionally omits
+volatile pdfTeX timestamps and trailer identifiers.
 
 Privacy inspection
 ------------------
