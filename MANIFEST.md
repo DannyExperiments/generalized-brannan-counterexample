@@ -68,8 +68,9 @@
 - `scripts/build_evidence_bundle.py`
 - `scripts/verify.sh`
 
-`SHA256SUMS.txt` covers every other regular file in this candidate. The clean
+`SHA256SUMS.txt` covers every other regular file in this release. The clean
 PDF build, page-by-page visual preflight, local checksum replay, exact arithmetic
-replay, repository verifier, and all three private-branch workflows have passed.
-Authorship, license, citation metadata, release tag, publication visibility,
-and DOI deposition remain gated.
+replay, repository verifier, and all three public-branch workflows have passed.
+Authorship, license status, citation metadata, and publication visibility are
+approved. DOI deposition remains pending until the immutable Version 1.0.0
+release deposit is published and verified.

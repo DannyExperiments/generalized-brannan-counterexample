@@ -1,11 +1,15 @@
 {
-  "status": "DRAFT_NOT_APPROVED",
+  "status": "APPROVED_FOR_DEPOSIT",
   "title": "Counterexamples to an all-positive Brannan coefficient inequality",
   "upload_type": "publication",
   "publication_type": "article",
   "version": "1.0.0",
   "description": "An exact negative answer to the all-positive generalized coefficient question recorded as Hayman--Lingham Problem 5.44, together with a degree-three endpoint classification and rational counterexamples at every integer index at least three.",
-  "creators": [],
+  "creators": [
+    {
+      "name": "DannyExperiments"
+    }
+  ],
   "license": null,
   "keywords": [
     "Brannan coefficient conjecture",
@@ -13,6 +17,13 @@
     "analytic functions",
     "counterexample"
   ],
-  "related_identifiers": [],
-  "notes": "Creators, license, repository URL, related identifiers, and release date require explicit human approval before deposition."
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/DannyExperiments/generalized-brannan-counterexample/releases/tag/v1.0.0",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "publication_date": "2026-08-08",
+  "notes": "Public Version 1.0.0 release. No repository-wide reuse license is granted; see LICENSE_STATUS.md."
 }

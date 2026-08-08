@@ -3,6 +3,7 @@
 [![Verify public evidence](https://github.com/DannyExperiments/generalized-brannan-counterexample/actions/workflows/verify.yml/badge.svg)](https://github.com/DannyExperiments/generalized-brannan-counterexample/actions/workflows/verify.yml)
 [![PDF build](https://github.com/DannyExperiments/generalized-brannan-counterexample/actions/workflows/pdf.yml/badge.svg)](https://github.com/DannyExperiments/generalized-brannan-counterexample/actions/workflows/pdf.yml)
 [![Partial exact-witness Lean check](https://github.com/DannyExperiments/generalized-brannan-counterexample/actions/workflows/lean.yml/badge.svg)](https://github.com/DannyExperiments/generalized-brannan-counterexample/actions/workflows/lean.yml)
+[![Release v1.0.0](https://img.shields.io/github/v/release/DannyExperiments/generalized-brannan-counterexample?label=release)](https://github.com/DannyExperiments/generalized-brannan-counterexample/releases/tag/v1.0.0)
 
 [Paper (PDF)](paper/manuscript.pdf) ·
 [TeX source](paper/manuscript.tex) ·
@@ -89,16 +90,12 @@ found in the documented search.
 
 ## Authorship and AI disclosure
 
-The final authorship and public AI-disclosure wording remain explicit human
-release decisions. AI systems were used for discovery, proof development,
+This release is authored under the name `DannyExperiments`. AI systems were
+used for discovery, proof development,
 adversarial auditing, literature-search assistance, manuscript preparation,
 and repository assembly. No AI system is proposed as an author. See
 [`AI_DISCLOSURE.md`](AI_DISCLOSURE.md) and [`PROVENANCE.md`](PROVENANCE.md).
 
-This repository is a private release candidate until the remaining gates in
-[`STATUS.md`](STATUS.md) are approved. The evidence, PDF, and partial Lean
-workflows are defined above and pass on the private repository's default branch.
-Their badges become public release evidence only after visibility is approved
-and the same checks pass on the public default branch. It does not claim journal
-acceptance, human peer review, full analytic formalization, or absolute
-historical priority.
+Version 1.0.0 is the frozen public release. The badges report checks on the
+public default branch. The release does not claim journal acceptance, human
+peer review, full analytic formalization, or absolute historical priority.

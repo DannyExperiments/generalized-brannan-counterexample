@@ -1,4 +1,4 @@
-# Version 1.0.0 release notes — draft, not approved
+# Version 1.0.0 release notes
 
 This release gives a negative answer to the literal all-positive generalized
 coefficient question recorded as Hayman--Lingham Problem 5.44.
@@ -28,7 +28,7 @@ and constructs rational positive-right-hand-side counterexamples at every
 integer index at least three. The result concerns the unrestricted positive
 parameter question and does not contradict the known unit-square theorem.
 
-Assets proposed for the immutable release:
+Assets included in the immutable release:
 
 - compiled paper PDF;
 - exact TeX source and bibliography;

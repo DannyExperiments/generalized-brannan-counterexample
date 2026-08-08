@@ -1,8 +1,9 @@
 cff-version: 1.2.0
-message: "If you use this private research candidate, cite it using the metadata below; replace the version and DOI after release."
+message: "If you use this work, please cite the Version 1.0.0 release using the metadata below."
 title: "Counterexamples to an all-positive Brannan coefficient inequality"
 type: software
-version: 0.1.0-private-candidate
+version: 1.0.0
+date-released: 2026-08-08
 repository-code: "https://github.com/DannyExperiments/generalized-brannan-counterexample"
 authors:
   - name: "DannyExperiments"
@@ -12,6 +13,7 @@ preferred-citation:
   authors:
     - name: "DannyExperiments"
   year: 2026
+  version: 1.0.0
 keywords:
   - complex analysis
   - univalent functions
