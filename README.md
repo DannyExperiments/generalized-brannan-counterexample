@@ -9,7 +9,8 @@
 [Problem and proof](proof/PROBLEM_AND_PROOF.md) ·
 [Mathematical audit](audits/MATHEMATICAL_AUDIT.md) ·
 [Literature audit](audits/LITERATURE_PRIORITY_AUDIT.md) ·
-[Reproduce](REPRODUCIBILITY.md)
+[Reproduce](REPRODUCIBILITY.md) ·
+[Citation](CITATION.cff)
 
 This repository gives a negative answer to the literal all-positive
 generalized coefficient question recorded as Hayman--Lingham Problem 5.44.
@@ -83,6 +84,8 @@ found in the documented search.
 - [`scripts/`](scripts/) — repository integrity, scope, privacy, and replay checks.
 - [`formalization/`](formalization/) — pinned partial exact-witness Lean certificate and exact scope.
 - [`evidence/`](evidence/) — sanitized process summary; raw private receipts are excluded.
+- [`CLAIMS_EVIDENCE_MATRIX.md`](CLAIMS_EVIDENCE_MATRIX.md) — claim-by-claim support and boundaries.
+- [`release/EVIDENCE_BUNDLE.zip`](release/EVIDENCE_BUNDLE.zip) — deterministic public evidence subset.
 
 ## Authorship and AI disclosure
 

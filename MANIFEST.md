@@ -7,6 +7,11 @@
 - `CLAIM_SCOPE_AND_LIMITATIONS.md`
 - `PRIOR_ART_AND_LIMITATIONS.md`
 - `STATUS.md`
+- `CITATION.cff`
+- `CLAIMS_EVIDENCE_MATRIX.md`
+- `CONTRIBUTING.md`
+- `LICENSE_STATUS.md`
+- `SECURITY.md`
 
 ## Reproducibility
 
@@ -55,6 +60,7 @@
 - `release/README.md`
 - `release/RELEASE_NOTES_DRAFT.md`
 - `release/zenodo_metadata_draft.json`
+- `release/EVIDENCE_BUNDLE.zip`
 
 `SHA256SUMS.txt` covers every other regular file in this candidate. The clean
 PDF build, page-by-page visual preflight, local checksum replay, exact arithmetic

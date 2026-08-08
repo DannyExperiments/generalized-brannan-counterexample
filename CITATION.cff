@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this private research candidate, cite it using the metadata below; replace the version and DOI after release."
+title: "Counterexamples to an all-positive Brannan coefficient inequality"
+type: software
+version: 0.1.0-private-candidate
+repository-code: "https://github.com/DannyExperiments/generalized-brannan-counterexample"
+authors:
+  - name: "DannyExperiments"
+preferred-citation:
+  type: article
+  title: "Counterexamples to an all-positive Brannan coefficient inequality"
+  authors:
+    - name: "DannyExperiments"
+  year: 2026
+keywords:
+  - complex analysis
+  - univalent functions
+  - Brannan conjecture
+  - coefficient inequalities
+  - counterexample
