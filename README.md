@@ -81,7 +81,7 @@ found in the documented search.
 - [`audits/`](audits/) — public-safe mathematical and literature adjudications.
 - [`checks/`](checks/) — dependency-free exact rational replay.
 - [`scripts/`](scripts/) — repository integrity, scope, privacy, and replay checks.
-- [`formalization/`](formalization/) — exact statement of the current no-formalization status.
+- [`formalization/`](formalization/) — pinned partial exact-witness Lean certificate and exact scope.
 - [`evidence/`](evidence/) — sanitized process summary; raw private receipts are excluded.
 
 ## Authorship and AI disclosure
@@ -94,7 +94,7 @@ and repository assembly. No AI system is proposed as an author. See
 
 This repository is a private release candidate until the remaining gates in
 [`STATUS.md`](STATUS.md) are approved. The local evidence and PDF workflows are
-defined above; their badges become release evidence only after both workflows
+defined above; their badges become release evidence only after all three workflows
 pass on the eventual repository's default branch. It does not claim journal
 acceptance, human peer review, full analytic formalization, or absolute
 historical priority.

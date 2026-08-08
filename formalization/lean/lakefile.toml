@@ -1,4 +1,4 @@
-name = "amr022"
+name = "AMR022"
 version = "1.0.0"
 defaultTargets = ["AMR022"]
 

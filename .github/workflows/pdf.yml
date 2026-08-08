@@ -12,6 +12,7 @@ permissions:
 
 jobs:
   build:
+    name: Rebuild manuscript PDF
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:

@@ -10,6 +10,7 @@ permissions:
 
 jobs:
   verify:
+    name: Verify public evidence
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

@@ -90,12 +90,15 @@ def verify_privacy() -> None:
     ]
     suffixes = {".md", ".tex", ".bib", ".py", ".yml", ".yaml", ".txt", ".json"}
     for path in ROOT.rglob("*"):
+        relative = path.relative_to(ROOT)
+        if ".git" in relative.parts or ".lake" in relative.parts:
+            continue
         if not path.is_file() or path.name == "SHA256SUMS.txt" or path.suffix.lower() not in suffixes:
             continue
         text = path.read_text(encoding="utf-8", errors="replace")
         for pattern in forbidden:
             if pattern.search(text):
-                fail(f"private-data pattern in {path.relative_to(ROOT)}: {pattern.pattern}")
+                fail(f"private-data pattern in {relative}: {pattern.pattern}")
 
 
 def replay_counterexample() -> None:
