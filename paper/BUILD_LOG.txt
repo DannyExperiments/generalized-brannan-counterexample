@@ -8,7 +8,7 @@ MATHEMATICS_CHANGED_BY_PRESENTATION_REPAIR: NO
 
 Canonical source hashes
 -----------------------
-- paper/manuscript.tex: 19b538024517ae3df10a633c069febfe043dce63a27a0907f6568fe666d0d671
+- paper/manuscript.tex: 8834e8eec1f766bba43602024b8a22ec842a05a9988e3b282cefb1dbff75e92f
 - paper/references.bib: 7092d3ee47bed8d909aced4b029ec1397ad9196eeeba051eb09c51210dcea587
 
 Canonical output
@@ -34,6 +34,10 @@ paper/manuscript.tex and paper/references.bib. It then rejects unresolved
 citations or references, multiply defined labels, overfull or underfull boxes,
 and LaTeX errors before uploading the rebuilt PDF.
 
+The source suppresses pdfTeX creation/modification dates, trailer IDs, and
+PTEX banner data so repeated clean builds under the pinned workflow toolchain
+are byte-identical.
+
 Final diagnostic gate
 ---------------------
 - undefined citations: 0
@@ -45,7 +49,8 @@ Final diagnostic gate
 - clean-build workflow: PASS
 - four-page visual inspection: PASS
 
-The three post-audit TeX changes are presentation controls only:
-emergencystretch, an empty author declaration, and an explicit anonymous
-running head. They alter no mathematical sentence, formula, theorem, proof,
-citation, or scope statement.
+The six post-audit TeX changes are presentation or reproducibility controls
+only: emergencystretch, an empty author declaration, an explicit anonymous
+running head, and suppression of three volatile pdfTeX metadata fields. They
+alter no mathematical sentence, formula, theorem, proof, citation, or scope
+statement.

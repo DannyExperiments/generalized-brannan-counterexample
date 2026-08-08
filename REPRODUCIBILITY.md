@@ -23,6 +23,8 @@ the same command on every push and pull request.
 The manuscript build is documented in `paper/BUILD.md` and replayed by
 `.github/workflows/pdf.yml`. The PDF workflow starts from TeX and the
 bibliography; a committed PDF is not accepted as build evidence by itself.
+Volatile pdfTeX metadata is suppressed, so a clean build with the pinned CI
+toolchain is expected to be byte-identical to the committed PDF.
 
 `release/EVIDENCE_BUNDLE.zip` is a deterministic, public-safe subset containing
 the shortest proof, exact arithmetic replay, public audit summaries, and the
